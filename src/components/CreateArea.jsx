@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import '../index.css'
 function CreateArea(props) {
   const [note, setNote] = useState({
