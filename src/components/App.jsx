@@ -6,7 +6,7 @@ import CreateArea from "./CreateArea.jsx";
 import '../index.css'
 function App() {
   const [notes, setNotes] = useState([]);
-
+  
   function addNote(newNote) {
     setNotes(prevNotes => {
       return [...prevNotes, newNote];
@@ -33,6 +33,7 @@ function App() {
             title={noteItem.title}
             content={noteItem.content}
             onDelete={deleteNote}
+            // onEdit = {editNote}
           />
         );
       })}
